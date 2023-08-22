@@ -3,9 +3,23 @@
 }
 
 .result-first {
-    display: none;
+    /* display: none; */
 }
 
-.result-second {
-    display: none;
+.image-block {
+    align-items: center;
+}
+
+.image-wrapper {
+    > .title {
+    }
+
+    > .image {
+        width: 60vw;
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
 }

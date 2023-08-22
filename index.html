@@ -6,6 +6,19 @@
     </head>
     <body>
         <div class="body-component">
+            <div class="result-first" id="result-first">
+                <p>解答欄に誤りがございました。正しくは【正】の解答欄となります。</p>
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <p class="description">解答欄【誤】</p>
+                        <img src="images/image_go.png" alt="間違った解答欄" class="image">
+                    </div>
+                    <div class="image-wrapper">
+                        <p class="description">解答欄【正】</p>
+                        <img src="images/image_sei.png" alt="正しい解答欄" class="image">
+                    </div>
+                </div>
+            </div>
             <h2 class="title">入力フォーム</h2>
             <div class="form-wrapper" id="form-wrapper">
                 <div class="description">aa</div>
@@ -13,12 +26,6 @@
                 <input type="button" onclick="check()" value="送信">
                 <div class="result-wrong" id="result-wrong">
                     <p>不正解です</p>
-                </div>
-                <div class="result-first" id="result-first">
-                    <p>ミス</p>
-                </div>
-                <div class="result-second" id="result-second">
-                    <p>正解です</p>
                 </div>
             </div>
         </div>
