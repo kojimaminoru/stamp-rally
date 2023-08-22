@@ -1,25 +1,73 @@
+.body-component {
+    padding: 24px 3vw;
+
+    > .title {
+        margin: 0;
+    }
+}
+
+.form-wrapper {
+    padding: 16px 0;
+
+    > .description {
+        font-size: 14px;
+    }
+
+    > .form {
+        margin: 8px 0;
+        padding: 4px;
+    }
+
+    > .submit {
+        margin: 8px 0;
+        width: 60px;
+    }
+}
+
 .result-wrong {
     display: none;
 }
 
 .result-first {
-    /* display: none; */
-}
+    border-top: dotted;
+    display: none;
+    padding: 24px 8px;
 
-.image-block {
-    align-items: center;
+    > .main {
+        font-size: 14px;
+    }
 }
 
 .image-wrapper {
-    > .title {
+    display: block;
+    margin: 0 auto;
+    padding: 16px;
+    width: fit-content;
+    position: relative;
+
+    > .description {
+        display: block;
+        position: relative;
+        top: 16px;
+        border-bottom: 1px solid;
     }
 
     > .image {
-        width: 60vw;
+        width: 75vw;
+        max-width: 600px;
     }
 }
 
-.title {
-    font-size: 32px;
-    font-weight: 700;
+.border {
+    border: solid 1px;
+}
+
+.border::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    border: solid 1px;
 }

@@ -1,31 +1,32 @@
 <html lang="ja">
     <head>
         <title>【謎解きスタンプラリー】入力フォーム</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
         <div class="body-component">
-            <div class="result-first" id="result-first">
-                <p>解答欄に誤りがございました。正しくは【正】の解答欄となります。</p>
-                <div class="image-block">
-                    <div class="image-wrapper">
-                        <p class="description">解答欄【誤】</p>
-                        <img src="images/image_go.png" alt="間違った解答欄" class="image">
-                    </div>
-                    <div class="image-wrapper">
-                        <p class="description">解答欄【正】</p>
-                        <img src="images/image_sei.png" alt="正しい解答欄" class="image">
-                    </div>
-                </div>
-            </div>
             <h2 class="title">入力フォーム</h2>
             <div class="form-wrapper" id="form-wrapper">
-                <div class="description">aa</div>
-                <input type="text" placeholder="ひらがなで入力" id="form">
-                <input type="button" onclick="check()" value="送信">
+                <div class="description">解答を入力してください</div>
+                <input class="form" type="text" placeholder="ひらがなで入力" id="form">
+                <input class="submit" type="button" onclick="check()" value="送信">
                 <div class="result-wrong" id="result-wrong">
                     <p>不正解です</p>
+                </div>
+            </div>
+            <div class="result-first" id="result-first">
+                <span class="main">解答欄に誤りがございました。正しくは【正】の解答欄となります。</span>
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <span class="description">解答欄【誤】</span>
+                        <img src="images/image_go.png" alt="間違った解答欄" class="image">
+                    </div>
+                    <div class="image-wrapper border">
+                        <span class="description">解答欄【正】</span>
+                        <img src="images/image_sei.png" alt="正しい解答欄" class="image">
+                    </div>
                 </div>
             </div>
         </div>
