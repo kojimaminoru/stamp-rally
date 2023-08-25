@@ -1,11 +1,19 @@
 <html lang="ja">
     <head>
         <title>【謎解きスタンプラリー】入力フォーム</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="refCheck()">
         <div class="body-component">
+            <div class="second-component">
+                <span class="main">正解です！<br>次が最終問題となります。</span>
+                <div class="wado-block">
+                    <div class="text">最後のスタンプの絵柄を答えよ。</div>
+                    <div class="image"></div>
+                </div>
+            </div>
             <h2 class="title">入力フォーム</h2>
             <div class="form-wrapper" id="form-wrapper">
                 <div class="description">aa</div>

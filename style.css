@@ -71,3 +71,10 @@
     right: -4px;
     border: solid 1px;
 }
+
+.wado-block {
+    height: 300px;
+    padding: 8px 4px;
+    margin: 8px 4px;
+    box-shadow: 0 0 15px -10px;
+}

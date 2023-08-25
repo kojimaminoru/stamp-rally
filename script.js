@@ -10,6 +10,7 @@ const check = () => {
     } else if (result == 1) {
         resultElementF.style.display = 'inherit';
     } else {
+        localStorage.setItem('answered', 'true');
         window.location.href = 'second.html';
     }
 }
@@ -19,4 +20,10 @@ const judgeAnwser = (input) => {
     if(input === 'A1') return 1;
     if(input === 'A2') return 2;
     return 0;
+}
+
+const refCheck = () => {
+    if (!localStorage.getItem('answered')){
+        window.location.href = 'index.html';
+    }
 }
