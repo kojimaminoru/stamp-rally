@@ -74,7 +74,152 @@
 
 .wado-block {
     height: 300px;
+    min-width: 260px;
     padding: 8px 4px;
     margin: 8px 4px;
     box-shadow: 0 0 15px -10px;
+
+    > .text {
+        padding: 4px;
+        text-align: center;
+    }
+}
+
+.pseudo-image {
+    > .a {
+        position: relative;
+
+        &::before {
+            content: 'A';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 30px;
+            left: calc(50% - 21px);
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: 86px;
+            left: calc(50% - 10px);
+            border-top: solid 10px #333;
+            border-left: solid 10px transparent;
+            border-right: solid 10px transparent;
+            box-shadow: -15px -10px 0 1px #fff, -6px -10px 0 0 #333;
+        }
+    }
+
+    > .b {
+        position: relative;
+
+        &::before {
+            content: 'B';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 100px;
+            left: calc(50% - 91px);
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: 111px;
+            left: calc(50% - 35px);
+            border-top: solid 10px transparent;
+            border-bottom: solid 10px transparent;
+            border-left: solid 10px #333;
+            box-shadow: -10px 15px 0 1px #fff, -10px 6px 0 0 #333;
+        }
+    }
+
+    > .c {
+        position: relative;
+
+        &::before {
+            content: 'C';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 100px;
+            left: calc(50% + 49px);
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: 111px;
+            left: calc(50% + 36px);
+            border-top: solid 10px transparent;
+            border-bottom: solid 10px transparent;
+            border-left: solid 10px #333;
+            box-shadow: -10px 15px 0 1px #fff, -10px 6px 0 0 #333;
+        }
+    }
+
+    > .d {
+        position: relative;
+
+        &::before {
+            content: 'D';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 170px;
+            left: calc(50% - 21px);
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            top: 146px;
+            left: calc(50% - 10px);
+            border-bottom: solid 10px #333;
+            border-left: solid 10px transparent;
+            border-right: solid 10px transparent;
+            box-shadow: -15px 10px 0 1px #fff, -6px 10px 0 0 #333;
+        }
+    }
+
+    > .e {
+        position: relative;
+
+        &::before {
+            content: 'E';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 100px;
+            left: calc(50% - 21px);
+            border-radius: 6px;
+            line-height: 40px;
+            text-align: center;
+            border: solid 1px;
+        }
+    }
 }
