@@ -7,7 +7,7 @@
     </head>
     <body onload="refCheck()">
         <div class="body-component">
-            <div class="result-second" id="result-second">
+            <div class="second-component">
                 <span class="main">正解です！<br>次が最終問題となります。</span>
                 <div class="wado-block">
                     <div class="text">最後のスタンプの絵柄を答えよ。</div>
@@ -19,22 +19,12 @@
                         <div class="e"></div>
                     </div>
                 </div>
-                <div class="form-wrapper" id="form-wrapper">
-                    <h2 class="title">入力フォーム</h2>
-                    <div class="description">解答を入力してください</div>
-                    <input class="form" type="text" placeholder="漢字一字で入力" id="form2">
-                    <input type="button" onclick="check2()" value="送信">
-                    <div class="result-wrong" id="result-wrong">
-                        <p>不正解です</p>
-                    </div>
-                </div>
             </div>
-            <div class="result-clear" id="result-clear">
-                <h2 class="title">クリア</h2>
-                <p>
-                    クリアです！おめでとうございます！<br>
-                    台紙とこの画面を持って、受付にお越しください。
-                </p>
+            <h2 class="title">入力フォーム</h2>
+            <div class="form-wrapper" id="form-wrapper">
+                <div class="description">aa</div>
+                <input type="text" placeholder="漢字一字で入力" id="form">
+                <input type="button" onclick="check()" value="送信">
             </div>
         </div>
     </body>

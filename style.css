@@ -1,13 +1,13 @@
 .body-component {
     padding: 24px 3vw;
-
-    > .title {
-        margin: 0;
-    }
 }
 
 .form-wrapper {
     padding: 16px 0;
+
+    > .title {
+        margin: 0 0 8px;
+    }
 
     > .description {
         font-size: 14px;
@@ -36,6 +36,10 @@
     > .main {
         font-size: 14px;
     }
+}
+
+.result-clear {
+    display: none;
 }
 
 .image-wrapper {
