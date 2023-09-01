@@ -2,11 +2,13 @@ const check = () => {
     const formElement = document.getElementById('form');
     const resultElementW = document.getElementById('result-wrong');
     const resultElementF = document.getElementById('result-first');
+    const description = document.getElementById('description');
     const result = judgeAnwser(formElement.value);
     resultElementW.style.display = 'none';
     resultElementF.style.display = 'none';
     if (result == 1) {
         resultElementF.style.display = 'inherit';
+        description.innerHTML = '正しい解答を入力してください'
     } else if (result == 2) {
         localStorage.setItem('answered', 'true');
         window.location.href = 'second.html';
@@ -34,7 +36,6 @@ const check2 = () => {
 const judgeAnwser = (input) => {
     console.log(Array.from(input))
     cipher = Array.from(input).reduce((acc, e) => acc * 91 + e.codePointAt(0), 0) % 100003;
-    console.log(cipher);
     if(cipher == 74401 ) return 1;
     if(cipher == 82194) return 2;
     if(cipher == 26143) return 3;
