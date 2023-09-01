@@ -25,16 +25,19 @@ const check2 = () => {
         resultElementW.style.display = 'none';
         resultElementS.style.display = 'none';
         resultElementC.style.display = 'inherit';
+        localStorage.removeItem('answered', 'true');
     } else {
         resultElementW.style.display = 'inherit';
     }
 }
 
 const judgeAnwser = (input) => {
-    input = '' + input;
-    if(input === 'びっとこいん') return 1;
-    if(input === 'ごまふあざらし') return 2;
-    if(input === '星') return 3;
+    console.log(Array.from(input))
+    cipher = Array.from(input).reduce((acc, e) => acc * 91 + e.codePointAt(0), 0) % 100003;
+    console.log(cipher);
+    if(cipher == 74401 ) return 1;
+    if(cipher == 82194) return 2;
+    if(cipher == 26143) return 3;
     return 0;
 }
 

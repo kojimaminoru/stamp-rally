@@ -52,7 +52,6 @@
     > .description {
         display: block;
         position: relative;
-        top: 16px;
         border-bottom: 1px solid;
     }
 
@@ -63,7 +62,7 @@
 }
 
 .border {
-    border: solid 1px;
+    border: solid 1px #00f;
 }
 
 .border::after {
@@ -73,7 +72,7 @@
     bottom: -4px;
     left: -4px;
     right: -4px;
-    border: solid 1px;
+    border: solid 1px #00f;
 }
 
 .wado-block {
