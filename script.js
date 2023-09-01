@@ -47,3 +47,13 @@ const refCheck = () => {
         window.location.href = 'index.html';
     }
 }
+
+// const openButton = document.getElementById('button');
+// var closeButton = document.getElementById('closeButton');
+// var exDialog = document.getElementById('exDialog');
+// openButton.addEventListener('click', function() {
+
+//     exDialog.showModal();
+//     showModal();
+
+// });

@@ -16,6 +16,23 @@
                     <p>不正解です</p>
                 </div>
             </div>
+            <button type="button" id="openButton" class="button">map</button>
+            <dialog id="exDialog" style="text-align: center;">
+                <p style="font-size: 14px;">施設内にはこんな場所があるようです</p>
+                <img src="images/green.JPG" alt="GMFM" style="width: 60vw; max-width: 300px;">
+                <button type="button" id="closeButton">閉じる</button>
+            </dialog>
+            <script>
+            var openButton = document.getElementById('openButton');
+            var closeButton = document.getElementById('closeButton');
+            var exDialog = document.getElementById('exDialog');
+            openButton.addEventListener('click', function() {
+                exDialog.showModal();
+            });
+            closeButton.addEventListener('click', function() {
+                exDialog.close();
+            });
+            </script>
             <div class="result-first" id="result-first">
                 <span class="main">解答欄に誤りがございました。正しくは【正】の解答欄となります。</span>
                 <div class="image-block">
