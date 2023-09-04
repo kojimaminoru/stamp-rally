@@ -1,5 +1,6 @@
 .body-component {
     padding: 24px 3vw;
+    -webkit-appearance: none;
 }
 
 .form-wrapper {
@@ -57,7 +58,7 @@
 
     > .image {
         width: 75vw;
-        max-width: 600px;
+        max-width: 300px;
     }
 }
 
